@@ -1,0 +1,7 @@
+node_modules/
+.docker/
+.DS_Store
+.env.example
+.gitignore
+*.png
+
