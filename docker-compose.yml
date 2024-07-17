@@ -1,0 +1,16 @@
+services:
+  app:
+    container_name: opendns_scrapping
+    build:
+      context: .
+      dockerfile: ./.docker/Dockerfile.development
+    ports:
+      - "3000:3000"
+    volumes:
+      - default
+    networks:
+      - app
+
+networks:
+  app:
+    driver: bridge
